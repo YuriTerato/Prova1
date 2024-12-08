@@ -1,0 +1,28 @@
+GET http://localhost:5064
+
+### Criação de um novo funcionário
+POST http://localhost:5064/api/funcionarios/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Seu nome",
+    "cpf" : "12345678912"
+}
+
+### Listar Funcionarios
+
+GET http://localhost:5064/api/funcionarios/listar
+
+### Alterar Funcionario
+
+PUT http://localhost:5064/api/funcionarios/alterar/2
+Content-Type: application/json
+
+{
+    "nome": "Nome Alterado",
+    "cpf" : "021.222.132-13"
+}
+
+### Deletar Funcionario
+DELETE http://localhost:5064/api/funcionarios/deletar/2
+
